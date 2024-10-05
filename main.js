@@ -1,6 +1,6 @@
 let boid;
 let creatureMeshGroup = new THREE.Group();
-const creatureNum = 300;
+const creatureNum = 100;
 
 const colorPalette = {
     screenBg: 0x041f60,
