@@ -16,7 +16,7 @@ const getRandomNum = (max = 0, min = 0) => Math.floor(Math.random() * (max + 1 -
 const render = () => {
     orbitControls.update();
     boid.update();
-    renderer.render(scene, camera);
+    renderer.render(camera);
     requestAnimationFrame(render);
 }
 
