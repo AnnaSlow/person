@@ -195,10 +195,10 @@ class Boid {
                 creature.applyForce(this.avoidBallContainer(creature, ballContainer.mesh.geometry.parameters.radius));
             } else if (guiControls.container === 'box') {
                 creature.applyForce(this.avoidBoxContainer(creature, boxContainer.mesh.geometry.parameters.width / 2,
-                    boxContainer.mesh.geometry.parameters.height / 2,
-                    boxContainer.mesh.geometry.parameters.depth / 2
+                    boxContainer.mesh.geometry.parameters.height / 21,
+                    boxContainer.mesh.geometry.parameters.depth / 21
                 ));
-            }
+            1
 
             creature.update();
         });
