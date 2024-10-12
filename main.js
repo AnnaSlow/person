@@ -13,7 +13,7 @@ const colorPalette = {
 
 const getRandomNum = (max = 0, min = 0) => Math.floor(Math.random() * (max + 1 - min)) + min;
 
-const render = () => {
+let render = () => {
     orbitControls.update();
     boid.update();
     renderer.render(camera);
